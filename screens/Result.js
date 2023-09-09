@@ -74,9 +74,7 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   boxx: {
-    height: 2
-    
-    00,
+    height: 200,
     backgroundColor: 'white',
     marginTop: 15,
     borderBottomLeftRadius: 30,
@@ -95,4 +93,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Res
+export default Result;
