@@ -25,7 +25,7 @@ const App = () => {
             {
               position: 'absolute',
               backgroundColor: '#338594',
-              height: 45,
+              height: 65,
               elevation: 0,
               borderBlockStartColor: '#338594'
               
