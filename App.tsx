@@ -44,11 +44,11 @@ const App = () => {
                   source={focused ? require(new1) : require(new2)}
                   resizeMode="contain"
                   style={{
-                    width: 25,
-                    height: 25,
+                    width: 35,
+                    height: 35,
                   }}
                 />
-                <Text style={{color: '#ffffff',fontSize: 10}}>New</Text>
+                <Text style={{color: '#ffffff',fontSize: 15}}>WaterFlow</Text>
               </View>
             ),
           }}
@@ -64,11 +64,11 @@ const App = () => {
                   source={focused ? require(result) : require(result2)}
                   resizeMode="contain"
                   style={{
-                    width: 25,
-                    height: 25,
+                    width: 35,
+                    height: 35,
                   }}
                 />
-                <Text style={{color: '#ffffff',fontSize: 10}}>Result</Text>
+                <Text style={{color: '#ffffff',fontSize: 15}}>Result</Text>
               </View>
             ),
           }}
@@ -84,11 +84,11 @@ const App = () => {
                   source={focused ? require(history) : require(history2)}
                   resizeMode="contain"
                   style={{
-                    width: 25,
-                    height: 25,
+                    width: 35,
+                    height: 35,
                   }}
                 />
-                <Text style={{color: '#ffffff',fontSize: 10}}>History</Text>
+                <Text style={{color: '#ffffff',fontSize: 15}}>History</Text>
               </View>
             ),
           }}

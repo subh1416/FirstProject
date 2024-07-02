@@ -2,12 +2,17 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { BarChart } from 'react-native-chart-kit';
 
-const HorizontalBarGraph = () => {
+const HorizontalBarGraph = ({apiData,apiData2}) => {
+  const field1Data = apiData2.map(item => parseFloat(item.field1));
+  const sum = field1Data.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+  const average = (sum / field1Data.length).toFixed(2);
+
+
   const data = {
     labels: ['Conductivity', 'Hardness', 'Acidity', 'Basicity'],
     datasets: [
       {
-        data: [400, 430, 448, 470],
+        data: [2*apiData, 0.7*apiData, 14-average, average],
       },
     ],
   };
@@ -24,7 +29,7 @@ const HorizontalBarGraph = () => {
           color: (opacity = 1) => `rgba(0, 184, 148, ${opacity})`,
           labelColor: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
         }}
-        fromZero
+        // fromZero
       />
     </View>
   );
