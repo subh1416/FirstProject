@@ -1,2 +1,1 @@
-Water Quality Monitoring And Leakage Detection System - Build with React Native
-The Data is Coming from ThingSpeak Api For Ph Sensor and Tds Sensor
+Water Quality Monitoring and Leakage Detection System - Built with React Native. Data is sourced from the ThingSpeak API for pH and TDS sensors
